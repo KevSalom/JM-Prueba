@@ -9,9 +9,12 @@ export const setVideos = (videos) => ({
 export const fetchVideos = () => {
   return async (dispatch) => {
     try {
+      console.log('entrando')
       const { data } = await axios.get("/api/videos");
+      console.log(data)
       dispatch(setVideos(data));
     } catch (error) {
+      console.lof('salio mal')
         console.error(error.message)
     }
   };
