@@ -9,7 +9,7 @@ export const setVideos = (videos) => ({
 export const fetchVideos = () => {
   return async (dispatch) => {
     try {
-      const { data } = await axios.get("http://localhost:3000/api/videos");
+      const { data } = await axios.get("/api/videos");
       dispatch(setVideos(data));
     } catch (error) {
         console.error(error.message)
