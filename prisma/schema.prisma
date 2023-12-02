@@ -11,26 +11,11 @@ datasource db {
   directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
 }
 
-enum PaymentStatus {
-  PENDING
-  PAID
-}
-
-model Client {
-  clientId         String    @id @default(uuid())
-  name             String
-  email            String    @unique
-  image            String
-  registrationDate DateTime  @default(now())
-  invoices         Invoice[]
-}
-
-model Invoice {
-  invoiceId        String    @id @default(uuid())
-  issueDate        DateTime  @default(now())
-  totalAmount      Float
-  services         String
-  paymentStatus    PaymentStatus
-  clientId         String
-  client           Client    @relation(fields: [clientId], references: [clientId])
+model Video {
+  id               String    @id @default(uuid())
+  title            String
+  description      String
+  url              String
+  important        Boolean   @default(false)
+  date             DateTime  @default(now())
 }
