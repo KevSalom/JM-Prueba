@@ -2,16 +2,17 @@ import "../../app/globals.css";
 import { BsPencilSquare } from "react-icons/bs";
 import Link from "next/link";
 import ButtonDeleteVideo from "./ButtonDeleteVideo";
+import Image from "next/image";
 
 const VideoCard = ({ video }) => {
   return (
     <div className="card max-w-[350px] bg-gray-50 rounded-md shadow-md overflow-hidden ">
       {/* Video */}
-      <iframe
-        src={video.url}
-        allowFullScreen={true}
-        className=" w-full h-48"
-      ></iframe>
+      <Image
+        src={video.thumbnail}
+        width={350} height={192} 
+        alt={video.title}
+      ></Image>
 
       {/* Info video section */}
       <section className="p-4 h-48 flex flex-col justify-between gap-2">

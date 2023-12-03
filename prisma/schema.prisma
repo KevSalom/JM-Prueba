@@ -16,6 +16,7 @@ model Video {
   title            String
   description      String
   url              String
+  thumbnail        String
   important        Boolean   @default(false)
   date             DateTime  @default(now())
 }
