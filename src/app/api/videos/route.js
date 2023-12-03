@@ -4,7 +4,11 @@ import prisma from "@/app/libs/prisma";
 //Route for get all videos
 export async function GET() {
   try {
-    const data = await prisma.video.findMany();
+    const data = await prisma.video.findMany({
+      orderBy: {
+        date: 'desc'
+      }
+    });
     return NextResponse.json(data);
   } catch (error) {
     console.error(error);
