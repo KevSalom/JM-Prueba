@@ -7,7 +7,7 @@ const ButtonDeleteVideo = ({ id }) => {
 
   return (
     <button onClick={() => deleteVideo(id)}>
-      {loading ? <SpinerShort /> : <BsXCircle className="fill-red-400 text-xl" />}
+      {loading ? <SpinerShort /> : <BsXCircle className="fill-gray-500 text-xl" />}
     </button>
   );
 };

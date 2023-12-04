@@ -19,9 +19,9 @@ const EditVideo = () => {
 
 
   return (
-    <div className=" w-full h-screen max-w-xl mx-auto my-8 md:my-10 ">
+    <div className=" w-[90%] h-screen max-w-xl mx-auto my-8 md:my-10 ">
      <h1 className="text-3xl md:text-4xl  text-center text-gray-600">
-        Editar Video
+        Editar Rutina
       </h1>
       {/* If the video does not exist, display an error message */}
       {errorGetVideo && <p>No hay videos cone ste ID</p>}

@@ -6,7 +6,7 @@ import VideoCard from "./VideoCart";
 import MyLoader from "./Skeleton";
 
 
-const ListOfVideos = () => {
+const Home = () => {
   const dispatch = useDispatch();
   const videos = useSelector((state) => state.allVideos);
   const [loading, setLoading] = useState(true);
@@ -21,7 +21,10 @@ const ListOfVideos = () => {
   }, []);
 
   return (
-    <div className="mt-6 w-full  ">
+    <div className="mt-6 w-full  pb-6">
+      <h1 className="text-3xl md:text-4xl  text-center text-gray-600 my-8 uppercase">
+        Mis Rutinas de Ejercicios
+      </h1>
       {loading && <MyLoader/>}
      <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center"> {!loading && ( 
         videos.length > 1 && 
@@ -32,4 +35,4 @@ const ListOfVideos = () => {
   );
 };
 
-export default ListOfVideos;
+export default Home;

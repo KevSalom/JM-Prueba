@@ -7,7 +7,7 @@ const CreateVideo = () => {
   return (
     <div className=" w-[90%] h-screen max-w-xl mx-auto my-8 md:my-10 ">
       <h1 className="text-3xl md:text-4xl  text-center text-gray-600">
-        Guardar un Nuevo Video
+        Crear Nueva Rutina
       </h1>
       <FormComponent onSubmit={createVideo}  loading={loading} error={error} />
     </div>

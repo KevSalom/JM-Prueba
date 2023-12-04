@@ -18,10 +18,10 @@ const ManageTable = ({videos}) => {
       <thead>
         <tr>
           <th className="border border-gray-100 whitespace-nowrap text-sm p-2 font-medium">
-            Imagen
+            Video
           </th>
           <th className="border  border-gray-100 whitespace-nowrap text-sm p-2 font-medium">
-            Título
+            Rutina
           </th>
           <th className="border border-gray-100 whitespace-nowrap text-sm p-2 font-medium">
             Fecha

@@ -1,7 +1,7 @@
-import ListOfVideos from './Components/ListOfVideos';
+import Home from './Components/Home';
 
 export default function Page() {
   return (
-      <ListOfVideos/>
+      <Home/>
   );
 }
