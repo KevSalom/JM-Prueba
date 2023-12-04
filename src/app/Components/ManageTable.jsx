@@ -1,18 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import ButtonDeleteWithText from "./ButtonDeleteWithText";
+import formatDate from "../libs/formatDate";
 
 const ManageTable = ({videos}) => {
 
-  // Creamos una función para formatear la fecha
-  const formatearFecha = (fecha) => {
-    // Usamos el objeto Date de JavaScript para crear una instancia de la fecha
-    const date = new Date(fecha);
-    // Retornamos la fecha formateada como dd/mm/yyyy
-    return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
-  };
-
-  // Retornamos el elemento JSX de la tabla
   return (
     <table className=" w-[90%] mx-auto max-w-lg border-transparent rounded-xl bg-gray-50 overflow-hidden shadow-sm">
       <thead>
@@ -47,7 +39,7 @@ const ManageTable = ({videos}) => {
               {video.title}
             </td>
             <td className="border  border-gray-100 whitespace-nowrap text-sm p-2 text-gray-500">
-              {formatearFecha(video.date)}
+              {formatDate(video.date)}
             </td>
             <td className="border  border-gray-100 whitespace-nowrap text-sm p-2 text-gray-500">
               <Link href={`edit/${video.id}`} className="bg-gray-600 text-white px-2 py-1 rounded mr-2">

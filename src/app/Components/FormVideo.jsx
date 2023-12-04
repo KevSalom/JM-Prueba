@@ -5,13 +5,16 @@ import Spinner from './Spinner';
 import { useRouter } from "next/navigation";
 import { useParams } from 'next/navigation';
 
+
 const FormComponent = ({ defaultValues, onSubmit, error, loading }) => {
+
   const { register, handleSubmit, formState: { errors, isValid } } = useForm({
     defaultValues,
     mode: 'onChange',
   });
   const params = useParams()
   const router = useRouter()
+
 
   const handleFormSubmit = async (formData) => {
 

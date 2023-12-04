@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import prisma from "@/app/libs/prisma";
 
 
-//Handles a POST request to add new videos to the database.
+//Handles a POST request to add several videos to the database.
 export async function POST(request) {
   try {
     const videos = await request.json();

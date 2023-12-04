@@ -27,7 +27,6 @@ export async function GET(request, { params }) {
 // Update a video with new data received by request
 export async function PUT(request, { params }) {
   const data = await request.json();
-  console.log(data)
 
   try {
     const video = await prisma.video.update({
@@ -52,7 +51,6 @@ export async function PUT(request, { params }) {
 
 // Mark a video as important or not important
 export async function PATCH(request, { params }) {
-  console.log('sdfsd')
   try {
     // Getting current video by id
     const currentVideo = await prisma.video.findUnique({

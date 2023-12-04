@@ -1,7 +1,5 @@
-//Sorts an array of video objects based on their 'date' property.
 const sortVideosByDate = (videos, order = 'desc') => {
 
-  console.log('entro aqui')
     // Validate the order parameter
     const validOrders = ['asc', 'desc'];
     if (!validOrders.includes(order)) {

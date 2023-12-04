@@ -2,6 +2,7 @@
 import useDeleteVideo from "../CustomHooks/useDeleteVideo";
 import { BsXCircle } from "react-icons/bs";
 import SpinerShort from "./SpinerShort";
+
 const ButtonDeleteVideo = ({ id }) => {
   const { loading, deleteVideo } = useDeleteVideo();
 

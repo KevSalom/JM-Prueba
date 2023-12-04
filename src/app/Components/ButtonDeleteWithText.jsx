@@ -1,6 +1,7 @@
 "use client";
 import SpinerShort from "./SpinerShort";
 import useDeleteVideo from "../CustomHooks/useDeleteVideo";
+
 const ButtonDeleteWithText= ({ id }) => {
   const { loading, deleteVideo } = useDeleteVideo();
 
