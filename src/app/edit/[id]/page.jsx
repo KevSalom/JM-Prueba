@@ -19,7 +19,7 @@ const EditVideo = () => {
 
 
   return (
-    <div className=" w-[90%] h-screen max-w-xl mx-auto my-8 md:my-10 ">
+    <div className=" w-full h-screen max-w-xl mx-auto my-8 md:my-10 ">
      <h1 className="text-3xl md:text-4xl  text-center text-gray-600">
         Actualizar Video
       </h1>

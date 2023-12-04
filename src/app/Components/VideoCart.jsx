@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const VideoCard = ({ video }) => {
   return (
-    <div className="card max-w-[350px] bg-gray-50 rounded-md shadow-md overflow-hidden ">
+    <div className="card max-w-[350px] bg-gray-50 rounded-md shadow-sm overflow-hidden hover:shadow-xl transition-shadow">
       {/* Video */}
       <Image
         src={video.thumbnail}
@@ -24,8 +24,9 @@ const VideoCard = ({ video }) => {
             {video.description}
           </p>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <ButtonDeleteVideo id={video.id} />
+          <a href={video.url} className="border-[1px] text-sm border-gray-400 text-gray-500 py-1 px-2 rounded-md hover:bg-gray-700 hover:text-gray-50 transition-colors" >Ver en Youtube</a>
           <Link href={`/edit/${video.id}`}>
             <BsPencilSquare className="fill-gray-500 text-xl" />
           </Link>

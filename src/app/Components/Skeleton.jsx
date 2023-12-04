@@ -1,4 +1,4 @@
-import React from "react"
+'use client'
 import ContentLoader from "react-content-loader"
 
 const UnitLoader = (props) => (
@@ -20,7 +20,8 @@ const UnitLoader = (props) => (
     <rect x="16" y="267" rx="6" ry="6" width="326" height="20" /> 
     <rect x="17" y="301" rx="6" ry="6" width="326" height="20" /> 
     <circle cx="28" cy="363" r="13" /> 
-    <circle cx="324" cy="362" r="13" />
+    <circle cx="324" cy="362" r="13" /> 
+    <rect x="115" y="350" rx="6" ry="6" width="121" height="28" />
   </ContentLoader>
 )
 

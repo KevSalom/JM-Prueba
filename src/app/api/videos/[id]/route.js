@@ -27,6 +27,8 @@ export async function GET(request, { params }) {
 // Update a video with new data received by request
 export async function PUT(request, { params }) {
   const data = await request.json();
+  console.log(data)
+
   try {
     const video = await prisma.video.update({
       where: {

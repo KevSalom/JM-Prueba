@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ReduxProvider>
-    <html lang="en" className='h-full w-full bg-gray-200'>
+    <html lang="en" className='h-full w-full bg-gray-200 overflow-x-hidden'>
       <body className={`${inter.className} w-[100%] max-w-7xl mx-auto`}><Navbar/> {children}</body>
     </html>
     </ReduxProvider>
