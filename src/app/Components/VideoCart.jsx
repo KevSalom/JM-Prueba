@@ -26,7 +26,7 @@ const VideoCard = ({ video }) => {
         </div>
         <div className="flex justify-between items-center">
           <ButtonDeleteVideo id={video.id} />
-          <a href={video.url} className="border-[1px] text-sm border-gray-400 text-gray-500 py-1 px-2 rounded-md hover:bg-gray-700 hover:text-gray-50 transition-colors" >Ver en Youtube</a>
+          <a href={video.url} className="border-[1px] text-sm border-gray-400 text-gray-500 py-1 px-2 rounded-md hover:bg-gray-700 hover:text-gray-50 hover:border-gray-700 transition-colors" >Ver en Youtube</a>
           <Link href={`/edit/${video.id}`}>
             <BsPencilSquare className="fill-gray-500 text-xl" />
           </Link>

@@ -1,3 +1,7 @@
+import Image from "next/image";
+import Link from "next/link";
+import ButtonDeleteWithText from "./ButtonDeleteWithText";
+
 const ManageTable = ({videos}) => {
 
   // Creamos una función para formatear la fecha
@@ -31,7 +35,9 @@ const ManageTable = ({videos}) => {
         {videos.map((video) => (
           <tr key={video.id}>
             <td className="border  border-gray-100 whitespace-nowrap text-sm p-2">
-              <img
+              <Image
+              height={56}
+              width={100}
                 src={video.thumbnail}
                 alt={video.title}
                 className="max-w-[100px] rounded-md "
@@ -44,12 +50,11 @@ const ManageTable = ({videos}) => {
               {formatearFecha(video.date)}
             </td>
             <td className="border  border-gray-100 whitespace-nowrap text-sm p-2 text-gray-500">
-              <button className="bg-gray-600 text-white px-2 py-1 rounded mr-2">
+              <Link href={`edit/${video.id}`} className="bg-gray-600 text-white px-2 py-1 rounded mr-2">
                 Editar
-              </button>
-              <button className="bg-gray-200 shadow-sm px-2 py-1 rounded text-gray-700">
-                Eliminar
-              </button>
+              </Link>
+           <ButtonDeleteWithText id={video.id} />
+              
             </td>
           </tr>
         ))}
