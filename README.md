@@ -14,8 +14,8 @@ Para configurar la base de datos, debes convertir el archivo `.env.txt` en `.env
 
 1. Renombra el archivo `.env.txt` a `.env.local`.
 2. Abre el archivo `.env.local` en tu editor de texto preferido.
-3. Busca la variable `POSTGRES_PRISMA_URL` y sustitúyela por `postgres://default:CzSo0hnOqi3H@ep-green-darkness-46485590-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15`.
-4. Busca la variable `POSTGRES_URL_NON_POOLING` y sustitúyela por `postgres://default:CzSo0hnOqi3H@ep-green-darkness-46485590.us-east-1.postgres.vercel-storage.com:5432/verceldb`.
+3. Busca la variable `POSTGRES_PRISMA_URL` y asígnale el valor `"postgres://default:CzSo0hnOqi3H@ep-green-darkness-46485590-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15"`.
+4. Busca la variable `POSTGRES_URL_NON_POOLING` y asígnale el valor `"postgres://default:CzSo0hnOqi3H@ep-green-darkness-46485590.us-east-1.postgres.vercel-storage.com:5432/verceldb"`.
 
 Esto permitirá que tu aplicación se conecte correctamente a la base de datos de PostgreSQL con el ORM Prisma.
 
