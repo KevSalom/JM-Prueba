@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# - RutinaTube | Test para Soluciones JM
 
-## Getting Started
+Este archivo README.md te guiará a través de los pasos necesarios para configurar y ejecutar tu aplicación Next.js localmente.
 
-First, run the development server:
+## Configuración Inicial
 
-```bash
+1. Clona el repositorio en tu máquina local usando `git clone`.
+2. Navega al directorio del proyecto con `cd [nombre-del-proyecto]`.
+3. Instala las dependencias del proyecto con `npm install`.
+
+## Configuración de la Base de Datos
+
+Para configurar la base de datos, debes convertir el archivo `.env.txt` en `.env.local` y sustituir las variables de entorno correspondientes:
+
+1. Renombra el archivo `.env.txt` a `.env.local`.
+2. Abre el archivo `.env.local` en tu editor de texto preferido.
+3. Busca la variable `POSTGRES_PRISMA_URL` y asígnale el valor `"postgres://default:CzSo0hnOqi3H@ep-green-darkness-46485590-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15"`.
+4. Busca la variable `POSTGRES_URL_NON_POOLING` y asígnale el valor `"postgres://default:CzSo0hnOqi3H@ep-green-darkness-46485590.us-east-1.postgres.vercel-storage.com:5432/verceldb"`.
+
+Esto permitirá que tu aplicación se conecte correctamente a la base de datos de PostgreSQL con el ORM Prisma.
+
+## Ejecución del Proyecto
+
+Una vez que hayas completado los pasos anteriores, puedes iniciar tu aplicación localmente con el siguiente comando:
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Esto iniciará tu aplicación en modo de desarrollo. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver tu aplicación en acción.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+# - Resumen de Comandos utilizados
 
-To learn more about Next.js, take a look at the following resources:
+## Instalación e iniciación del proyecto
+`npm i`
+`npm run dev`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Dependencias y utilidades
+`npm i axios`
+`npm i react-icons`
+`npm i react-hook-form`
+`npm i redux`
+`npm i react-redux`
+`npm i react-content-loader`
+`npm i redux-thunk`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Base de datos
+`npm i @vercel/postgres`
+`npm install prisma --save-dev`
+`npx prisma init`
+`npx prisma migrate dev --name init`
+`npx prisma studio`
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Repositorio
+`git add .`
+`git commit -m 'name'`
+`git push origin main`
