@@ -29,4 +29,30 @@ npm run dev
 
 Esto iniciará tu aplicación en modo de desarrollo. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver tu aplicación en acción.
 
-¡Feliz desarrollo!
+
+# Resumen de Comandos utilizados
+
+## Instalación e iniciación del proyecto
+npm i
+npm run dev
+
+## Dependencias y utilidades
+`npm i axios`
+`npm i react-icons`
+`npm i react-hook-form`
+`npm i redux`
+`npm i react-redux`
+`npm i react-content-loader`
+`npm i redux-thunk`
+
+## Base de datos
+`npm i @vercel/postgres`
+`npm install prisma --save-dev`
+`npx prisma init`
+`npx prisma migrate dev --name init`
+`npx prisma studio`
+
+## Repositorio
+`git add .`
+`git commit -m 'name'`
+`git push origin main`
