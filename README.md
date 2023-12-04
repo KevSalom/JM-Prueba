@@ -34,8 +34,8 @@ Esto iniciará tu aplicación en modo de desarrollo. Abre [http://localhost:3000
 # - Resumen de Comandos utilizados
 
 ## Instalación e iniciación del proyecto
-npm i
-npm run dev
+`npm i`
+`npm run dev`
 
 ## Dependencias y utilidades
 `npm i axios`
