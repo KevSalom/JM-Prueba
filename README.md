@@ -1,4 +1,4 @@
-# RutinaTube | Test para Soluciones JM
+# - RutinaTube | Test para Soluciones JM
 
 Este archivo README.md te guiará a través de los pasos necesarios para configurar y ejecutar tu aplicación Next.js localmente.
 
@@ -30,7 +30,8 @@ npm run dev
 Esto iniciará tu aplicación en modo de desarrollo. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver tu aplicación en acción.
 
 
-# Resumen de Comandos utilizados
+
+# - Resumen de Comandos utilizados
 
 ## Instalación e iniciación del proyecto
 npm i
