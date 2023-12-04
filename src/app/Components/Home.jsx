@@ -34,7 +34,7 @@ const Home = () => {
   
       {loading && <MyLoader/>}
      <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center"> {!loading && ( 
-        videos.length > 1 && 
+        videos.length > 0 && 
         videos?.map((video) => <VideoCard video={video} key={video.id} />)
       )}
       </div>

@@ -19,12 +19,13 @@ export async function GET() {
 //Route for Create a video in the database.
 export async function POST(request) {
   try {
-    const { title, description, url } = await request.json();
+    const { title, description, url, thumbnail } = await request.json();
     const newClient = await prisma.video.create({
       data: {
         title,
         description,
         url,
+        thumbnail
       },
     });
     return NextResponse.json(newClient);
