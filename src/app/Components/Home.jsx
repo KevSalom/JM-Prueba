@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchVideos } from "../redux/actions";
 import VideoCard from "./VideoCart";
 import MyLoader from "./Skeleton";
+import Stadistics from "./Stadistics";
 
 
 const Home = () => {
@@ -22,9 +23,15 @@ const Home = () => {
 
   return (
     <div className="mt-6 w-full  pb-6">
-      <h1 className="text-3xl md:text-4xl  text-center text-gray-600 my-8 uppercase">
+      <div className="my-8 ">
+   
+      <h1 className="text-3xl md:text-4xl  text-center text-gray-600 uppercase">
         Mis Rutinas de Ejercicios
       </h1>
+      <Stadistics/>
+      </div>
+          
+  
       {loading && <MyLoader/>}
      <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center"> {!loading && ( 
         videos.length > 1 && 
