@@ -25,7 +25,7 @@ const useStadistics = () => {
           setTotalVideos(0);
           setNewVideos(0);
           setLoading(false);
-        }, 3000);
+        }, 6000);
       }
   
       return () => {
